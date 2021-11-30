@@ -151,3 +151,5 @@ let coursesArray = [
 // }
 //
 // document.writeln(cutString(str, 5))
+
+
