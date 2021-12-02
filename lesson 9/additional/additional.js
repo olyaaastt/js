@@ -236,74 +236,72 @@
 // Створити під кожен елемент окремий блок. В цьому блоці, під кожну властивість, та властивості внутрішніх об'єктів створити свої окремі блок.
 
 
-for (let user of usersList) {
-    let divElement= document.createElement('div');
-    document.body.appendChild(divElement)
-
-    let id =document.createElement('h4');
-    id.innerText = user.id;
-    divElement.appendChild(id)
-
-    let name =document.createElement('h2');
-    name.innerText = user.name;
-    divElement.appendChild(name);
-
-    let username =document.createElement('h2');
-    username.innerText = user.username;
-    divElement.appendChild(username);
-
-    let email = document.createElement('p');
-    email.innerText = user.email;
-    divElement.appendChild(email);
-
-
-    let phone = document.createElement('div');
-    phone.innerText = user.phone;
-
-
-
-    let website = document.createElement('div');
-    website.innerText = user.website;
-
-    let address = document.createElement('div');
-
-    let street =  document.createElement('div');
-    street.innerText=user.address.street
-    address.appendChild(street)
-
-
-
-    let suite=  document.createElement('div');
-    suite.innerText=user.address.suite
-    address.appendChild(suite)
-
-    let city=  document.createElement('div');
-    city.innerText=user.address.city
-    address.appendChild(city)
-
-    let zipcode=  document.createElement('div');
-    zipcode.innerText=user.address.zipcode
-    address.appendChild(zipcode)
-
-
-
-    for (const item in user.address.geo) {
-        const div = document.createElement("div");
-        div.innerText = user.address.geo[item ];
-        address.appendChild(div)
-    }
-
-    divElement.appendChild(address);
-    divElement.appendChild(phone);
-    divElement.appendChild(website);
-    let company = document.createElement('div');
-    for (const item in user.company) {
-        const temp = document.createElement("div");
-        temp.innerText = user.company[item];
-        company.appendChild(temp);
-    }
-
-    divElement.appendChild(company);
-
-}
-
+// for (let user of usersList) {
+//     let divElement= document.createElement('div');
+//     document.body.appendChild(divElement)
+//
+//     let id =document.createElement('h4');
+//     id.innerText = user.id;
+//     divElement.appendChild(id)
+//
+//     let name =document.createElement('h2');
+//     name.innerText = user.name;
+//     divElement.appendChild(name);
+//
+//     let username =document.createElement('h2');
+//     username.innerText = user.username;
+//     divElement.appendChild(username);
+//
+//     let email = document.createElement('p');
+//     email.innerText = user.email;
+//     divElement.appendChild(email);
+//
+//
+//     let phone = document.createElement('div');
+//     phone.innerText = user.phone;
+//
+//
+//
+//     let website = document.createElement('div');
+//     website.innerText = user.website;
+//
+//     let address = document.createElement('div');
+//
+//
+//
+//
+//
+//
+//     for (const item in user.address) {
+//
+//         if(item !=="geo") {
+//             let div = document.createElement("div");
+//             div.innerText = user.address[item];
+//             address.appendChild(div)
+//
+//         }
+//          else{
+//             for (const item in user.address.geo) {
+//                 const div = document.createElement("div");
+//                 div.innerText = user.address.geo[item];
+//                 address.appendChild(div)
+//             }
+//         }
+//
+//     }
+//
+//
+//     divElement.appendChild(address);
+//     divElement.appendChild(phone);
+//     divElement.appendChild(website);
+//     let company = document.createElement('div');
+//     for (const item in user.company) {
+//         const temp = document.createElement("div");
+//         temp.innerText = user.company[item];
+//         company.appendChild(temp);
+//     }
+//
+//     divElement.appendChild(company);
+//
+// }
+//
