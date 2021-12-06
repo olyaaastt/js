@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.carusel_container{
+    width: 50%;
+    margin: auto;
+    border: 5px solid black;
+    overflow: hidden;
+}
+.carusel_container img{
+    display: block;
+    width: 100%
+
+}
+.carusel__slide{
+    display: flex;
+    height: 400px;
+
+}
+.btn{
+    padding: 10px;
+    margin: 10px;
+    border-radius:10%;
+    font-size: 25px;
+}
+.btnWrap{
+    display: flex;
+    justify-content: center;
+
+}
+.wrap{
+ margin-top: 30px;
+}
