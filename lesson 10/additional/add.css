@@ -5,3 +5,18 @@
 
 }
 
+.popup {
+    width: 200px;
+    height: 100px;
+    background: rgba(209, 122, 241, 0.44);
+    position: absolute;
+    top: -1000px;
+    left: 50%;
+    transition: 1s;
+}
+
+.show-popup {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+}

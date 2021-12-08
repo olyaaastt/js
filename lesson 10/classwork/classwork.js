@@ -123,6 +123,42 @@
 // }
 //
 
+// - Сворити масив не цензцрних слів.
+//     Сворити інпут текстового типу.
+//     Потрібно перевіряти чи не містить ціле речення в собі погані слова.
+//     Кинути алерт з попередженням у випадку якщо містить.
+//     Перевірку робити при натисканні на кнопку
+
+
+// let arr = ['kozlyk', 'blyat', 'mudak'];
+// let input = document.createElement('input');
+// let btn = document.createElement('button');
+// btn.innerText = 'click here';
+// btn.style.background = 'blue';
+// btn.style.color = 'white';
+// btn.style.border = ' 2px solid blue';
+// document.body.append(input, btn);
+//
+// btn.onclick = function () {
+//
+//     for (let a of arr) {
+//
+//         if (input.value.includes(a)) {
+//             alert(`${a} я тебе знайду `);
+//             input.value = ' ';
+//             return;
+//         }
+//
+//     }
+//     if (input.value) {
+//         alert('ok')
+//         input.value = ' ';
+//     }
+// }
+
+
+
+
 
 
 
