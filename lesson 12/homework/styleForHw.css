@@ -7,11 +7,10 @@ body{
     width: 230px;
     border: 1px solid black;
     border-radius: 20px;
-    margin: 5px;
     background:lightskyblue;
     text-align: center;
     box-shadow:  7px 7px 10px 1px lightblue ;
-
+    margin: 5px;
 }
 .post{
     display: flex;

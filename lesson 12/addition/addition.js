@@ -6,7 +6,6 @@
 
 
 
-
 // let blockPost = document.createElement('div');
 // blockPost.classList.add('block--post');
 // let blockComment = document.createElement('div');
