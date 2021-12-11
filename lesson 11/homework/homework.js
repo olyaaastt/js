@@ -2,19 +2,19 @@
 //     При відправці форми записати об'єкт в localstorage
 //
 //
-// let btn = document.getElementById('btn');
-//
-// let {name, age} = document.forms.form;
-//
-// function data(name, age) {
-//     let input = {name: name, age: age};
-//
-//     localStorage.setItem('informationFromInput', JSON.stringify(input));
-// }
-//
-// btn.onclick = function () {
-//     data(name.value, age.value);
-// }
+let btn = document.getElementById('btn');
+
+let {name, age} = document.forms.form;
+
+function data(name, age) {
+    let input = {name: name, age: age};
+
+    localStorage.setItem('informationFromInput', JSON.stringify(input));
+}
+
+btn.onclick = function () {
+    data(name.value, age.value);
+}
 
 
 // -створити форму з інпутами для model,type та volume автівки.

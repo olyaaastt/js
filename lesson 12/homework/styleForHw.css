@@ -1,0 +1,24 @@
+
+body{
+    margin: 0 auto;
+    width: 1400px;
+}
+.postWrap{
+    width: 230px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 5px;
+    background:lightskyblue;
+    text-align: center;
+    box-shadow:  7px 7px 10px 1px lightblue ;
+
+}
+.post{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
