@@ -38,6 +38,7 @@ for (let item of goods) {
         let key = JSON.parse(localStorage.getItem('key'));
        if (date.getTime()) {
            key.splice(key, 1);
+          a.removeChild(div);
        }
         localStorage.setItem('key',JSON.stringify(key))
     }
