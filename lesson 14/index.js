@@ -6,155 +6,201 @@
 
 
 
-//
-// function wakeUp() {
-//     return new Promise((resolve) => {
+
+// function wakeUp(done) {
+//     return new Promise((resolve,reject) => {
 //         setTimeout(() => {
 //
+//             if(done) {
 //                 console.log('eeeeee  wake up');
 //                 resolve('wake up')
+//             }
+//             else{
+//                 reject('error')
+//             }
 //
 //         }, 500)
 //     })
 // }
-// function eat() {
-//     return new Promise((resolve) => {
+// function eat(done) {
+//     return new Promise((resolve,reject) => {
 //         setTimeout(() => {
 //
+//             if(done) {
 //                 console.log('you have a breakfast');
 //                 resolve('eat')
+//             }
+//             else{
+//                 reject('error')
+//             }
 //
 //         }, 1000)
 //     })
 // }
-// function study() {
-//     return new Promise((resolve) => {
+// function study(done) {
+//     return new Promise((resolve,reject) => {
 //         setTimeout(() => {
 //
 //
+//             if (done) {
 //                 console.log('do homework');
 //                 resolve('study')
+//             }
+//             else{
+//                 reject('error')
+//             }
 //
 //         }, 2500)
 //     })
 // }
-// function dinner() {
-//     return new Promise((resolve) => {
+// function dinner(done) {
+//     return new Promise((resolve,reject) => {
 //         setTimeout(() => {
 //
+//             if (done) {
 //                 console.log('eeeaaaat');
 //                 resolve('dinner')
+//             }else{
+//                 reject('error')
+//             }
+//
 //
 //         }, 2000)
 //     })
 // }
-// function walk() {
-//     return new Promise((resolve) => {
+// function walk(done) {
+//     return new Promise((resolve,reject) => {
 //         setTimeout(() => {
 //
+//             if (done) {
 //                 console.log('walk with friends');
 //                 resolve('walk')
+//             }else{
+//                 reject('error')
+//             }
 //
 //         }, 700)
 //     })
 // }
-// function watchFilm() {
-//     return new Promise((resolve) => {
+// function watchFilm(done) {
+//     return new Promise((resolve,reject) => {
 //         setTimeout(() => {
-//            console.log('go to the cinema');
+//             if(done) {
+//                 console.log('go to the cinema');
 //                 resolve('film')
+//             }else{
+//                 reject('error')
+//             }
 //
 //         }, 2500)
 //     })
 // }
-// function timeForTea() {
-//     return new Promise((resolve) => {
+// function timeForTea(done) {
+//     return new Promise((resolve,reject) => {
 //         setTimeout(() => {
 //
+//             if (done) {
 //                 console.log('drink tea');
 //                 resolve('tea')
+//             }else{
+//                 reject('error')
+//             }
+//
 //
 //         }, 1000)
 //     })
 // }
-// function supper() {
-//     return new Promise((resolve) => {
+// function supper(done) {
+//     return new Promise((resolve,reject) => {
 //         setTimeout(() => {
 //
+//             if(done) {
 //                 console.log('supper');
 //                 resolve('food')
+//             }else{
+//                 reject('error')
+//             }
 //
 //         }, 200)
 //     })
 // }
-// function reading() {
-//     return new Promise((resolve) => {
+// function reading(done) {
+//     return new Promise((resolve,reject) => {
 //         setTimeout(() => {
 //
-//
-//                 console.log('read book');
-//                 resolve('reading')
-//
+//          if(done) {
+//              console.log('read book');
+//              resolve('reading')
+//          }else{
+//              reject('error')
+//          }
 //         }, 1000)
 //     })
 // }
-// function sleep() {
-//     return new Promise((resolve) => {
+// function sleep(done) {
+//     return new Promise((resolve,reject) => {
 //         setTimeout(() => {
 //
+//             if (done) {
 //
 //                 console.log('go sleeping');
 //                 resolve('sleep')
-//
+//             }else{
+//                 reject('error')
+//             }
 //         }, 600)
 //     })
 // }
-//
+
 
 
  // //promise
 
-
-// wakeUp()
+// try{
+// wakeUp(true)
 //     .then(result=>{
-//     return eat()
+//     return eat(true)
 // }) .then(result=>{
-//     return study()
+//     return study(true)
 // }).then(result=>{
-//     return dinner()
+//     return dinner(true)
 // }).then(result=>{
-//     return walk()
+//     return walk(true)
 // }).then(result=>{
-//     return watchFilm()
+//     return watchFilm(true)
 // }).then(result=>{
-//     return timeForTea()
+//     return timeForTea(true)
 // }).then(result=>{
-//     return supper()
+//     return supper(true)
 // }).then(result=>{
-//     return reading()
+//     return reading(true)
 // }).then(result=>{
-//     return sleep()
+//     return sleep(true)
 // })
+// }
+// catch(e){
+//     console.error(e)
+// }
 
 
  // // async
 
 // async function day() {
-//     // try {
-//         await wakeUp();//1
-//         await eat();
-//         await study();
-//         await dinner();
-//         await walk();
-//         await timeForTea();
-//         await watchFilm();
-//         await supper();
-//         await reading();//9
-//         await sleep();
+//     try {
+//         await wakeUp(true);
+//         await eat(true);
+//         await study(true);
+//         await dinner(true);
+//         await walk(true);
+//         await timeForTea(true);
+//         await watchFilm(true);
+//         await supper(true);
+//         await reading(true);
+//         await sleep(true);
 //
-//     // } catch (e) {
-//     //     console.error(e)
-//     // }
+//     } catch (e) {
+//         console.error(e)
+//     }
 // }
 // day()
 
