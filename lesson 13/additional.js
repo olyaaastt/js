@@ -21,8 +21,8 @@ let { name, count, price, photo } = document.forms.f1;
      localStorage.setItem('key',JSON.stringify(arr));
 
  }
-btn.onclick=function (e){
-     e.preventDefault()
+btn.onclick=function (){
+
 
     shop( name.value, count.value, price.value, photo.value)
 };
